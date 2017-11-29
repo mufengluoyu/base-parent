@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.hcz.springCloud</groupId>
+  <artifactId>base-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>jackhe-cloud-user-service</module>
+    <module>jackhe-cloud-eureka-service</module>
+    <module>jackhe-cloud-consumer-service</module>
+    <module>Jackhe-cloud-user-two-service</module>
+    <module>jackhe-cloud-user-common</module>
+	<module>jackhe-cloud-consumer-ribbitmq-service</module>
+    <module>jackhe-cloud-rabbitmq-service</module>
+  </modules>
+  <!-- 引入spring boot的依赖 -->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.4.3.RELEASE</version>
+  </parent>
+</project>
