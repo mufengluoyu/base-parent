@@ -8,8 +8,9 @@
   <modules>
     <module>jackhe-cloud-user-service</module>
     <module>jackhe-cloud-eureka-service</module>
+    <module>jackhe-cloud-eureka-two-service</module>
     <module>jackhe-cloud-consumer-service</module>
-    <module>Jackhe-cloud-user-two-service</module>
+    <module>jackhe-cloud-product-service</module>
     <module>jackhe-cloud-user-common</module>
 	<module>jackhe-cloud-consumer-ribbitmq-service</module>
     <module>jackhe-cloud-rabbitmq-service</module>

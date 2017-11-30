@@ -1,5 +1,5 @@
 server:
-  port: 8030
+  port: 8031
 spring:
   application:
     name: jackhe-cloud-eureka-service
@@ -13,12 +13,12 @@ eureka:
     registerWithEureka: false      #是否将自己注册到EurekaServer上面
     fetchRegistry: false		   #是否从EurekaServer 上面获取注册信息
     serviceUrl: 
-      defaultZone: http://localhost:8030/eureka/
+      defaultZone: http://localhost:8031/eureka/
     #client:						#实现多个服务同是调用多台EurekaServer服务
     #registerWithEureka: true      #是否将自己注册到EurekaServer上面
     #fetchRegistry: true		   #是否从EurekaServer 上面获取注册信息
     #serviceUrl: 
-      #defaultZone: http://localhost:8031/eureka/
+      #defaultZone: http://localhost:8030/eureka/
   instance:
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ipAddress}:${server.port}

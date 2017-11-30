@@ -3,7 +3,7 @@ server:
 spring:
   application:
     name: jackhe-cloud-consumer-service
-  rabbitmq:
+  rabbitmq:                              #rabbitmq消息队列监控
     host: localhost
     port: 5672
     username: guest
@@ -19,6 +19,7 @@ eureka:
       enabled: true
     serviceUrl:
       defaultZone: http://localhost:8030/eureka/
+      #defaultZone: http://localhost:8030/eureka/,http://localhost:8031/eureka/  #多个EurekaServer注册中心
   instance:
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ipAddress}:${server.port}
