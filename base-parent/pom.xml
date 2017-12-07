@@ -14,6 +14,7 @@
     <module>jackhe-cloud-user-common</module>
 	<module>jackhe-cloud-consumer-ribbitmq-service</module>
     <module>jackhe-cloud-rabbitmq-service</module>
+    <module>jackhe-cloud-zuul-gateway</module>
   </modules>
   <!-- 引入spring boot的依赖 -->
   <parent>

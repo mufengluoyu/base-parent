@@ -21,7 +21,7 @@ logging:                                # 配置日志级别，让hibernate打�
 eureka:
   client:
     healthcheck:
-      enabled:true
+      enabled: true
     serviceUrl:
       defaultZone: http://localhost:8030/eureka/
       #defaultZone: http://localhost:8030/eureka/,http://localhost:8031/eureka/  #多个EurekaServer注册中心
