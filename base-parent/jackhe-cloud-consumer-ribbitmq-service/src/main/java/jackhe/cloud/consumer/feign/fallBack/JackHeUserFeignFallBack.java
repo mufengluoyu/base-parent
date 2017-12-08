@@ -27,6 +27,7 @@ public class JackHeUserFeignFallBack implements JackHeUserFeign{
 
 	@Override
 	public UserBaseVo findByUserId(Long id) {
+		
 		UserBaseVo user = new UserBaseVo();
 		user.setId(-1L);
 	    user.setUsername("默认回滚用户（降级处理）");
