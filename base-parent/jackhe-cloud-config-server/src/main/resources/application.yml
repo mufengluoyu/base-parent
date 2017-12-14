@@ -10,6 +10,7 @@ spring:
           uri: https://github.com/mufengluoyu/jackhe-config      # 配置Git仓库的地址
           username:                                                         # Git仓库的账号
           password:                                                         # Git仓库的密码
+          #search-paths: jack-cloud-base                                    # 仓库下面的额文件夹
 eureka:
   client:
     healthcheck:

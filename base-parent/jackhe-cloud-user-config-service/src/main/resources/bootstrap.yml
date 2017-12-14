@@ -1,6 +1,7 @@
 spring:
   application:
-    name: jackhe-cloud-user-service    # 对应config server所获取的配置文件的{application}   不是该节点的名称
+    #name: jackhe-cloud-user-service    # 对应config server所获取的配置文件的{application}   
+    name: user-service    # 对应config server所获取的配置文件的{application}   不是该节点的名称
   cloud:
     config:
       profile: dev
@@ -8,7 +9,7 @@ spring:
       discovery:
         enabled: true                                  # 表示使用服务发现组件中的Config Server，而不自己指定Config Server的uri，默认false
         service-id: jackhe-cloud-config-server  # 指定Config Server在服务发现中的serviceId，默认是configserver
-eureka:
+eureka:                                                #该处调用的是调用config配置中心的eureka服务器，与本项目无直接关系
   client:
     serviceUrl:
       defaultZone: http://localhost:8030/eureka/     #
