@@ -41,6 +41,18 @@ public class JackHeConsumerController {
 	public UserBaseVo findbyUserId(@PathVariable Long id){
 		return this.jackHeUserService.findByUserId(id);
 	}
+	@GetMapping(value="/consumer/userBasePost/{id}")
+	public UserBaseVo findByUserBasePost(@PathVariable Long id){
+		UserBaseVo vo = new UserBaseVo();
+		vo.setId(id);
+		return this.jackHeUserService.getUserPost(vo);
+	}
+	@GetMapping(value="/consumer/userPost/{id}")
+	public User findByUserPost(@PathVariable Long id){
+		User vo = new User();
+		vo.setId(id);
+		return this.jackHeUserService.getUser(vo);
+	}
 	/**
 	 * 测试负载均衡
 	 * @return

@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.jackhe.cloud.user.entity.User;
@@ -54,7 +55,7 @@ public class UserController {
 	 * @return
 	 */
 	@PostMapping(value="/user/post")
-	public UserBaseVo getUserPost(UserBaseVo userBase){
+	public UserBaseVo getUserPost(@RequestBody UserBaseVo userBase){
 		GoodsModel goodsModel = new GoodsModel();
 		goodsModel.setGoodsId("1");
 		goodsModel.setGooodsName("测试商品8010的商品1");

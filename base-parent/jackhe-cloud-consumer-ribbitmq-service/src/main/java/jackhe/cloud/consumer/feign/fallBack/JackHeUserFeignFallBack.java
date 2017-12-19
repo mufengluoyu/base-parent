@@ -56,4 +56,12 @@ public class JackHeUserFeignFallBack implements JackHeUserFeign{
 	    return user;
 	}
 
+	@Override
+	public User getUser(User user) {
+	    user.setId(-1L);
+	    user.setUsername("默认回滚用户（降级处理）");
+	    return user;
+	}
+
+
 }

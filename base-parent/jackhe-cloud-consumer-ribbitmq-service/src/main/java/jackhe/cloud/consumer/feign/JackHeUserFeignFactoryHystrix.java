@@ -3,6 +3,7 @@ package jackhe.cloud.consumer.feign;
 import java.util.Map;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -45,5 +46,5 @@ public interface JackHeUserFeignFactoryHystrix {
 	 * @return
 	 */
 	@RequestMapping(value = "/user/post", method = RequestMethod.POST)
-	public UserBaseVo getUserPost(UserBaseVo userBase);
+	public UserBaseVo getUserPost(@RequestBody UserBaseVo userBase);
 }
