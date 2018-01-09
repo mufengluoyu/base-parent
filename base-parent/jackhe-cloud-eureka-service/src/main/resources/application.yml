@@ -7,6 +7,7 @@ spring:
     root: INFO
 eureka:
   client:
+    #enableSelfPreservation: false  #关闭自我保护机制
     registerWithEureka: false      #是否将自己注册到EurekaServer上面
     fetchRegistry: false		   #是否从EurekaServer 上面获取注册信息
     serviceUrl: 
